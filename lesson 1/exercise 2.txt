@@ -1,0 +1,5 @@
+[root@myServer ~]# mkfifo mypipe
+[root@myServer ~]# ss -plnt > mypipe &
+[1] 37988
+[root@myServer ~]# cat mypipe > rezult.txt
+[1]+  Done                    ss -plnt > mypipe

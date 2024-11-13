@@ -1,0 +1,2 @@
+[root@myServer ~]# date +%s | xargs -i date -d@{} +"%d-%m-%Y"
+13-11-2024

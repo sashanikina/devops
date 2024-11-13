@@ -1,0 +1,5 @@
+[root@myServer ~]# cat > text.txt << EOF
+> first strind
+> second string
+> third string
+> EOF

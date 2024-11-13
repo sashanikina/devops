@@ -1,0 +1,7 @@
+[root@myServer ~]# cat /var/log/messages > mypipe &
+[1] 38083
+[root@myServer ~]# cat mypipe > messages.txt
+[1]+  Done                    cat /var/log/messages > mypipe
+[root@myServer ~]# tar -czf messages.tar.gz messages.txt
+[root@myServer ~]# ls
+messages.tar.gz  messages.txt  mypipe  rezult.txt

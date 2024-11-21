@@ -1,2 +1,6 @@
-[root@myServer ~]# date +%s | xargs -i date -d@{} +"%d-%m-%Y"
-13-11-2024
+[root@myServer ~]# date +%s > date.txt
+[root@myServer ~]# read unix_time < date.txt
+[root@myServer ~]# date -d @$unix_time +%s
+1732178451
+[root@myServer ~]# date -d @$unix_time "+%Y-%m-%d %H:%M:%S"
+2024-11-21 08:40:51

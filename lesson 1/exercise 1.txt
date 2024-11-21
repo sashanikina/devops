@@ -1,1 +1,2 @@
+ip address show |grep inet|grep -v 127.0.0.1
 inet 93.183.74.91/24 brd 93.183.74.255 scope global noprefixroute enp0s5
